@@ -1,0 +1,10 @@
+
+note over browser:
+browser grabs the form data and prevents default form handling 
+which stops a GET request to server
+browser adds new note to list of notes on browser and rerenders page
+browser thens sends a HTTP POST to update notes list on server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa new note
+server-->browser: HTTP response 201 
